@@ -1,0 +1,16 @@
+<mvc:View controllerName="z00.modelos.controller.View2"
+    displayBlock="true"    
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m">
+    <Page id="page2" showNavButton="true" title="{i18n>appTitle}"
+        navButtonPress="aoVoltar" >
+        <content>
+            <VBox>
+                <Text text="Roteamento feito com sucesso" />
+                
+                <!-- <core:Fragment fragmentName="z00.modelos.view.fragment.primeiroFragmento" type="XML" /> -->
+            </VBox>   
+        </content>
+    </Page>
+</mvc:View>

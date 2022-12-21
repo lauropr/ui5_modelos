@@ -1,0 +1,67 @@
+<mvc:View controllerName="z00.modelos.controller.View1"
+    displayBlock="true"    
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" 
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>appTitle}">
+        <content>
+            <VBox>
+                <HBox>
+                    <Label text="Nome: "/> 
+                    <Text text="{colaboradorLocal>/Nome}" />    
+                </HBox>    
+                <HBox>
+                    <Label text="Sobrenome: "/> 
+                    <Text text="{colaborador>/Sobrenome}" />    
+                </HBox>    
+                <HBox>
+                    <Label text="Data de Nascimento: "/> 
+                    <Text text="{colaborador>/DataNasc}" />    
+                </HBox>    
+                <HBox>
+                    <Label text="Cargo: "/> 
+                    <Text text="{colaborador>/Cargo}" />    
+                </HBox> 
+                <HBox>
+                    <Label text="Propriedade via código: "/> 
+                    <Text text="{colaboradorLocal>/novoTexto}" />    
+                </HBox> 
+                
+                
+                <!-- <List items="{colaborador>/Dependentes}">
+                   <items>
+                        <StandardListItem title="{colaborador>Nome}" description="{colaborador>Sobrenome}" 
+                            info="{colaborador>DataNasc}" />                    
+                   </items>
+                </List> -->
+                <List items="{colaboradorLocal>/Dependentes}">
+                    <headerToolbar>
+                        <Toolbar>
+                            <!--agregação content, é default então pode ser omitida -->
+                            <Title text="{i18n>dep}" />
+                        </Toolbar>
+                    </headerToolbar>
+                    <items>
+                        <CustomListItem>
+                            <!--agregação content, é default então pode ser omitida -->
+                            <HBox>
+                                <core:Icon class="sapUiSmallMarginBeginEnd" size="3rem" src="sap-icon://person-placeholder" />
+                                <VBox>
+                                    <Label text="{colaboradorLocal>Nome}" />
+                                    <Label text="{colaboradorLocal>Sobrenome}" />
+                                    <Label text="{colaboradorLocal>DataNasc}" />
+                                </VBox>
+                            </HBox>
+                        </CustomListItem>
+                    </items>
+                 </List>
+
+                 <Button text="Navegar pág 2" press="aoApertar" />
+                 <Button text="Navegar Fragmento 1" press="aoApertarFragmento1" />
+                 <Button text="Navegar Fragmento 2" press="aoApertarFragmento2" />
+ 
+
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

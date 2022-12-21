@@ -1,0 +1,26 @@
+{
+    "Matricula": "001",
+    "Nome": "João",
+    "Sobrenome": "Silva",
+    "DataNasc": "14/05/1987",
+    "Cargo": "Desenvolvedor SAP Fiori",
+    "Dados Organizacionais": {
+      "CentroCustos": "0100",
+      "Filial": "1500",
+      "Gestor": "9001"
+      },
+    "Dependentes": [
+      {
+        "TipoDependente": "1",
+        "Nome": "Maria",
+        "Sobrenome": "Silva",
+        "DataNasc": "10/10/1985"
+      },
+      {
+        "TipoDependente": "2",
+        "Nome": "Gabriel",
+        "Sobrenome": "Silva",
+        "DataNasc": "25/03/2010"
+      }
+    ]
+  }
